@@ -1,0 +1,46 @@
+{
+  "name": "drivly-react-components",
+  "version": "1.0.0",
+  "description": "Drivly React Component Library",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Drivly",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@heroicons/react": "^2.0.16",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.28",
+    "autoprefixer": "^10.4.14",
+    "clsx": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.19.1",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-import-css": "^3.2.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^1.9.6",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "install-peerdeps": "^3.0.3",
+    "postcss": "^8.4.21"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
