@@ -17,6 +17,6 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
-    "typeRoots": ["./typings.d.ts"]
+    // "typeRoots": ["./typings.d.ts"]
   }
 }

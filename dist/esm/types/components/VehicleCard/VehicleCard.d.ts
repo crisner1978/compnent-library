@@ -1,3 +1,4 @@
+/// <reference types="react" />
 export type IVehicle = {
     year: string;
     make: string;
@@ -22,7 +23,6 @@ export type IVehicle = {
 interface VehicleCardProps {
     vehicle: IVehicle;
     isLoading?: boolean;
-    recId?: string;
     itemUrl?: string;
 }
 declare const VehicleCard: ({ vehicle, isLoading, itemUrl }: VehicleCardProps) => JSX.Element;

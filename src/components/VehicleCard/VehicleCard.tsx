@@ -10,7 +10,7 @@ export type IVehicle = {
   make: string
   model: string
   trim: string
-  image: string
+  primaryImage: string
   mileage: string
   lane?: string
   runNumber?: string
@@ -30,7 +30,6 @@ export type IVehicle = {
 interface VehicleCardProps {
   vehicle: IVehicle
   isLoading?: boolean
-  recId?: string
   itemUrl?: string
 }
 
@@ -47,7 +46,7 @@ const VehicleCard = ({ vehicle, isLoading, itemUrl }: VehicleCardProps) => {
           })}>
           <img
             className='rounded-t-[10px] object-cover object-center'
-            src={vehicle?.image || '/assets/comingSoon.jpg'}
+            src={vehicle?.primaryImage || '/assets/comingSoon.jpg'}
             alt={vehicle?.model || 'vehicle'}
           />
         </div>
@@ -92,7 +91,7 @@ const VehicleCard = ({ vehicle, isLoading, itemUrl }: VehicleCardProps) => {
             </p>
 
             {vehicle?.condition && (
-              <span className='vehicle__condition'>{vehicle?.condition} Condition</span>
+              <span className='vehicle__condition whitespace-nowrap'>{vehicle?.condition} Condition</span>
             )}
           </div>
         </div>
